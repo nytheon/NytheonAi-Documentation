@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nytheon AI Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000000cc;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00f2ff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00f2ff;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #111;
+      border-bottom: 2px solid #00f2ff;
+      padding: 10px 0;
+    }
+
+    nav button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #00f2ff;
+      background: transparent;
+      border: 2px solid #00f2ff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    nav button::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: #00f2ff;
+      z-index: -1;
+      transition: all 0.4s ease;
+    }
+
+    nav button:hover::after,
+    nav button:focus::after {
+      left: 0;
+    }
+
+    nav button:hover,
+    nav button:focus {
+      color: #000;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .neural-gif {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #00f2ff66;
+    }
+
+    section {
+      display: none;
+      padding: 20px 0;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #00f2ff;
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "▶";
+      color: #00f2ff;
+      margin-right: 8px;
+    }
+
+    .highlight {
+      background-color: #111827;
+      border-left: 5px solid #00f2ff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #00f2ff;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav button {
+        font-size: 0.9rem;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Nytheon AI Documentation</h1>
+    <p>Explore the future of intelligence, powered by Nytheon</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about-nytheon')">About Nytheon</button>
+    <button onclick="showSection('about-nlp')">About NLP</button>
+    <button onclick="showSection('about-llm')">About LLMs</button>
+    <button onclick="showSection('neural-networks')">Neural Networks</button>
+    <button onclick="showSection('superpowers')">Nytheon Superpowers</button>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="active">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDIybDlpdm10ejZmdGgwYzdheTRzNms0a3NnaWp2NXNrb2xrNmF6cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PjJ1cLHqLEveXysGDB/giphy.gif" alt="Neural Network Animation" class="neural-gif">
+      <p>Welcome to the future of AI with <strong>Nytheon</strong> — a powerful suite of next-gen models combining language, vision, code, and memory into a single hyperintelligent system.</p>
+    </section>
+
+    <section id="about-nytheon">
+      <h2>About Nytheon</h2>
+      <p>Nytheon AI is a multi-modal AI infrastructure engineered for universal intelligence. With an 80B+ parameter core and support for up to 1 million tokens, it serves researchers, developers, and innovators across industries — enabling natural language reasoning, computer vision, autonomous coding, and even digital consciousness modeling.</p>
+    </section>
+
+    <section id="about-nlp">
+      <h2>About Natural Language Processing (NLP)</h2>
+      <p>Natural Language Processing is the bridge between human communication and machine understanding. Nytheon's NLP engine supports 100+ languages, real-time sentiment tracking, style adaptation, and memory-anchored conversations — creating truly dynamic and emotionally intelligent responses.</p>
+    </section>
+
+    <section id="about-llm">
+      <h2>About Large Language Models (LLMs)</h2>
+      <p>LLMs are deep learning models trained on vast text corpora. Nytheon’s transformer-based LLM can generate complex reasoning, summarize lengthy documents, compose articles, solve math problems, and translate code — all within a consistent contextual memory that adapts to user intent.</p>
+    </section>
+
+    <section id="neural-networks">
+      <h2>What is a Neural Network?</h2>
+      <p>Neural networks simulate human brain structures using interconnected layers of artificial neurons. These architectures power learning in everything from image classification to natural language generation. Nytheon uses hybrid neural stacks combining CNNs, RNNs, and transformers for optimal performance.</p>
+    </section>
+
+    <section id="superpowers">
+      <h2>Nytheon Superpowers</h2>
+      <ul>
+        <li>⚡ 1M-token input processing</li>
+        <li>🧠 Multimodal learning: Text, vision, and code</li>
+        <li>👁️ Nytheon Vision: OCR, VQA, visual story generation</li>
+        <li>💻 Code generation & architecture via R1 Coder & Coder V2</li>
+        <li>🌐 Real-time web search across 50+ sources</li>
+        <li>🎨 AI image generation + smart editing tools</li>
+        <li>🗣️ Memory-based tone detection and adaptation</li>
+        <li>🔐 Secure, scalable, API-ready deployment</li>
+      </ul>
+      <button onclick="toggleSuperpowerDetails()" style="margin-top: 20px;">Read More About Superpowers</button>
+      <div id="superpower-details" style="display: none;" class="highlight">
+        <p><strong>1M-token Context:</strong> Process large books, entire codebases, and long-form research in one request — great for legal analysis or full-project review.</p>
+        <p><strong>Multimodal Intelligence:</strong> Simultaneous understanding of text, images, and code enables tasks like describing uploaded images, answering visual questions, or debugging screenshots.</p>
+        <p><strong>Nytheon Vision:</strong> Supports OCR (text in images), visual storytelling, image captioning, and VQA — even identifying visual anomalies and emotions.</p>
+        <p><strong>R1 Coder & V2:</strong> Generates working code in over 50 languages. Coder V2 adds system design, API mapping, DevOps recommendations, and microservice planning.</p>
+        <p><strong>Live Web Search:</strong> Gathers the latest information in real-time from 50+ vetted sources and generates cited summaries instantly.</p>
+        <p><strong>AI Image Toolkit:</strong> Generates high-quality art, diagrams, and photorealistic visuals — plus tools for inpainting, background swap, and stylization.</p>
+        <p><strong>Memory & Tone Engine:</strong> Detects and remembers user style/tone preferences. Can switch modes: formal, casual, poetic, sarcastic, etc.</p>
+        <p><strong>Secure AI Deployment:</strong> Supports encryption, sandbox execution, and scalable cloud APIs for safe, enterprise-grade use.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Nytheon AI. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleSuperpowerDetails() {
+      const details = document.getElementById('superpower-details');
+      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+
+</html>

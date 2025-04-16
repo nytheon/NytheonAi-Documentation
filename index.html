@@ -144,6 +144,18 @@
       font-size: 0.9rem;
     }
 
+    .social-links a {
+      color: #00f2ff;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+    }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
@@ -174,28 +186,29 @@
 
   <div class="container">
     <section id="home" class="active">
-      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDIybDlpdm10ejZmdGgwYzdheTRzNms0a3NnaWp2NXNrb2xrNmF6cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PjJ1cLHqLEveXysGDB/giphy.gif" alt="Neural Network Animation" class="neural-gif">
-      <p>Welcome to the future of AI with <strong>Nytheon</strong> — a powerful suite of next-gen models combining language, vision, code, and memory into a single hyperintelligent system.</p>
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDIybDlpdm10ejZmdGgwYzdheTRzNms0a3NnaWp2NXNrb2xrNmF6cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PjJ1cLHqLEveXysGDB/giphy.gif"
+        alt="Neural Network Animation" class="neural-gif">
+      <p>Welcome to the frontier of intelligence with <strong>Nytheon</strong> — a next-gen platform that unifies language, vision, code, and contextual memory into one hyperintelligent AI ecosystem.</p>
     </section>
 
     <section id="about-nytheon">
       <h2>About Nytheon</h2>
-      <p>Nytheon AI is a multi-modal AI infrastructure engineered for universal intelligence. With an 80B+ parameter core and support for up to 1 million tokens, it serves researchers, developers, and innovators across industries — enabling natural language reasoning, computer vision, autonomous coding, and even digital consciousness modeling.</p>
+      <p>Nytheon AI is a multimodal AI infrastructure built for universal intelligence. Its 80B+ parameter core and 1M-token context support enable advanced reasoning, vision processing, and code generation — serving industries from research to robotics.</p>
     </section>
 
     <section id="about-nlp">
       <h2>About Natural Language Processing (NLP)</h2>
-      <p>Natural Language Processing is the bridge between human communication and machine understanding. Nytheon's NLP engine supports 100+ languages, real-time sentiment tracking, style adaptation, and memory-anchored conversations — creating truly dynamic and emotionally intelligent responses.</p>
+      <p>NLP bridges human expression with machine comprehension. Nytheon's NLP capabilities cover 100+ languages, real-time tone tracking, memory-based dialogue, and adaptable styles for lifelike interactions.</p>
     </section>
 
     <section id="about-llm">
       <h2>About Large Language Models (LLMs)</h2>
-      <p>LLMs are deep learning models trained on vast text corpora. Nytheon’s transformer-based LLM can generate complex reasoning, summarize lengthy documents, compose articles, solve math problems, and translate code — all within a consistent contextual memory that adapts to user intent.</p>
+      <p>LLMs are trained on vast data to understand and generate human language. Nytheon's transformer-based LLM handles summarization, translation, reasoning, coding, and content generation across long contexts with adaptive memory.</p>
     </section>
 
     <section id="neural-networks">
       <h2>What is a Neural Network?</h2>
-      <p>Neural networks simulate human brain structures using interconnected layers of artificial neurons. These architectures power learning in everything from image classification to natural language generation. Nytheon uses hybrid neural stacks combining CNNs, RNNs, and transformers for optimal performance.</p>
+      <p>Neural networks are systems of artificial neurons that mimic human brain structures. Nytheon utilizes a hybrid stack of CNNs, RNNs, and transformers for vision, language, and cross-modal intelligence.</p>
     </section>
 
     <section id="superpowers">
@@ -204,28 +217,34 @@
         <li>⚡ 1M-token input processing</li>
         <li>🧠 Multimodal learning: Text, vision, and code</li>
         <li>👁️ Nytheon Vision: OCR, VQA, visual story generation</li>
-        <li>💻 Code generation & architecture via R1 Coder & Coder V2</li>
+        <li>💻 Code generation via R1 Coder & Coder V2</li>
         <li>🌐 Real-time web search across 50+ sources</li>
         <li>🎨 AI image generation + smart editing tools</li>
         <li>🗣️ Memory-based tone detection and adaptation</li>
-        <li>🔐 Secure, scalable, API-ready deployment</li>
+        <li>🔐 Scalable and secure API-ready deployment</li>
       </ul>
       <button onclick="toggleSuperpowerDetails()" style="margin-top: 20px;">Read More About Superpowers</button>
       <div id="superpower-details" style="display: none;" class="highlight">
-        <p><strong>1M-token Context:</strong> Process large books, entire codebases, and long-form research in one request — great for legal analysis or full-project review.</p>
-        <p><strong>Multimodal Intelligence:</strong> Simultaneous understanding of text, images, and code enables tasks like describing uploaded images, answering visual questions, or debugging screenshots.</p>
-        <p><strong>Nytheon Vision:</strong> Supports OCR (text in images), visual storytelling, image captioning, and VQA — even identifying visual anomalies and emotions.</p>
-        <p><strong>R1 Coder & V2:</strong> Generates working code in over 50 languages. Coder V2 adds system design, API mapping, DevOps recommendations, and microservice planning.</p>
-        <p><strong>Live Web Search:</strong> Gathers the latest information in real-time from 50+ vetted sources and generates cited summaries instantly.</p>
-        <p><strong>AI Image Toolkit:</strong> Generates high-quality art, diagrams, and photorealistic visuals — plus tools for inpainting, background swap, and stylization.</p>
-        <p><strong>Memory & Tone Engine:</strong> Detects and remembers user style/tone preferences. Can switch modes: formal, casual, poetic, sarcastic, etc.</p>
-        <p><strong>Secure AI Deployment:</strong> Supports encryption, sandbox execution, and scalable cloud APIs for safe, enterprise-grade use.</p>
+        <p><strong>1M-token Context:</strong> Ideal for legal docs, full codebases, or long research content in one pass.</p>
+        <p><strong>Multimodal Intelligence:</strong> Integrates vision, language, and code — useful for diagnostics, design, and analysis.</p>
+        <p><strong>Nytheon Vision:</strong> Powers OCR, captioning, emotion detection, and anomaly identification in images.</p>
+        <p><strong>R1 Coder & V2:</strong> Writes production-level code in 50+ languages, with advanced API, DevOps, and architecture support.</p>
+        <p><strong>Web Search:</strong> Summarizes real-time data from curated sources with proper citation.</p>
+        <p><strong>AI Image Tools:</strong> Create, edit, and stylize visuals with ease — from diagrams to photorealistic art.</p>
+        <p><strong>Memory & Tone Engine:</strong> Adapts responses to user preferences: casual, formal, witty, poetic, etc.</p>
+        <p><strong>Secure Deployment:</strong> Encrypted, sandboxed, and scalable for enterprise environments.</p>
       </div>
     </section>
   </div>
 
   <footer>
     <p>© 2025 Nytheon AI. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/Nytheon" target="_blank">GitHub</a> |
+      <a href="https://twitter.com/NytheonAI" target="_blank">Twitter</a> |
+      <a href="https://t.me/nytheon" target="_blank">Telegram</a> |
+      <a href="mailto:nytheonai@gmail.com">Email</a>
+    </div>
   </footer>
 
   <script>
